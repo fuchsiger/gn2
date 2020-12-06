@@ -139,3 +139,26 @@ mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameter
 mic   github.py          INFO     Creating the git repository
 mic   github.py          INFO     Compressing code
 mic   github.py          INFO     Creating a new commit
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': 'D:\\MINT\\MINT_Homepage_Modelle\\Scenario_Forecast\\gn_2\\mic\\mic.yaml', 'data': {'key': 'github_repo_url', 'value': 'https://github.com/fuchsiger/gn2.git'}}
+mic   github.py          INFO     Creating a new version
+mic   github.py          DEBUG    New version: 20.12.2
+mic   github.py          INFO     Pushing changes to the server
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': 'D:\\MINT\\MINT_Homepage_Modelle\\Scenario_Forecast\\gn_2\\mic\\mic.yaml', 'data': {'key': 'version', 'value': '20.12.2'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': 'D:\\MINT\\MINT_Homepage_Modelle\\Scenario_Forecast\\gn_2\\mic\\mic.yaml', 'data': {'key': 'mint_component_url', 'value': 'https://raw.githubusercontent.com/fuchsiger/gn2/master/mint_component.zip'}}
+mic   github.py          INFO     Push complete: {'repository': 'https://github.com/fuchsiger/gn2.git', 'version': '20.12.2'}
+mic   docker.py          INFO     Publish docker image
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': 'D:\\MINT\\MINT_Homepage_Modelle\\Scenario_Forecast\\gn_2\\mic\\mic.yaml', 'data': {'key': 'docker_image', 'value': 'fuchsiger/gn2:20.12.2'}}
+mic   commands.py        ERROR    Upload failed: list index out of range
+Traceback (most recent call last):
+  File "c:\users\ga73mon\appdata\local\esri\conda\envs\arcgispro-py3-clone\lib\site-packages\mic\click_encapsulate\commands.py", line 692, in upload
+    model_configuration, profile)
+  File "c:\users\ga73mon\appdata\local\esri\conda\envs\arcgispro-py3-clone\lib\site-packages\mic\publisher\model_catalog.py", line 104, in publish_model_configuration
+    api_response, model_id, software_version_id = handle_existing_model(profile, api_response_mc, labels, model_cli)
+  File "c:\users\ga73mon\appdata\local\esri\conda\envs\arcgispro-py3-clone\lib\site-packages\mic\publisher\model_catalog.py", line 121, in handle_existing_model
+    selected_model = models[choice - 1]
+IndexError: list index out of range
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameters': {'mic_file': {'value': 'D:\\MINT\\MINT_Homepage_Modelle\\Scenario_Forecast\\gn_2\\mic\\mic.yaml', 'type': 'str'}, 'profile': {'value': 'default', 'type': 'str'}, 'model_configuration': {'value': True, 'type': 'bool'}, 'data_transformation': {'value': None, 'type': 'NoneType'}}}
+mic   github.py          INFO     Creating the git repository
+mic   github.py          INFO     Compressing code
+mic   github.py          INFO     Creating a new commit
