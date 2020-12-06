@@ -1,6 +1,6 @@
 step: 2
 name: gn2
-docker_image: gn2:latest
+docker_image: fuchsiger/gn2:20.12.1
 framework: !!python/object/apply:mic.constants.Framework
 - !!python/tuple
   - general
@@ -67,3 +67,6 @@ outputs:
   output_std:
     path: inputs/output.std
     format: std
+github_repo_url: https://github.com/fuchsiger/gn2.git
+version: 20.12.1
+mint_component_url: https://raw.githubusercontent.com/fuchsiger/gn2/master/mint_component.zip
