@@ -1,0 +1,69 @@
+step: 2
+name: gn2
+docker_image: gn2:latest
+framework: !!python/object/apply:mic.constants.Framework
+- !!python/tuple
+  - general
+  - mintproject/generic:latest
+container_name: gn2_d7509928
+parameters:
+  snftemp:
+    name: snftemp
+    default_value: 3
+    type: int
+    description: ''
+configs:
+  basins_bsn:
+    path: inputs/basins.bsn
+    format: bsn
+inputs:
+  inputs_zip:
+    path: inputs.zip
+    format: zip
+code_files:
+  swat670:
+    path: inputs/swat670
+    format: ''
+outputs:
+  output_hru:
+    path: inputs/output.hru
+    format: hru
+  bmp-ri_out:
+    path: inputs/bmp-ri.out
+    format: out
+  output_rsv:
+    path: inputs/output.rsv
+    format: rsv
+  bmp-sedfil_out:
+    path: inputs/bmp-sedfil.out
+    format: out
+  fin_fin:
+    path: inputs/fin.fin
+    format: fin
+  chan_deg:
+    path: inputs/chan.deg
+    format: deg
+  output_sub:
+    path: inputs/output.sub
+    format: sub
+  output_sed:
+    path: inputs/output.sed
+    format: sed
+  output_rch:
+    path: inputs/output.rch
+    format: rch
+  watout_dat:
+    path: inputs/watout.dat
+    format: dat
+  input_std:
+    path: inputs/input.std
+    format: std
+  hyd_out:
+    path: inputs/hyd.out
+    format: out
+  septic_out:
+    path: inputs/septic.out
+    format: out
+  output_std:
+    path: inputs/output.std
+    format: std

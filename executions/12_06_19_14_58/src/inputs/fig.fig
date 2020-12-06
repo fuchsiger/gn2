@@ -1,0 +1,117 @@
+subbasin       1     1     1                              Subbasin: 1
+          000010000.sub
+subbasin       1     2     2                              Subbasin: 2
+          000020000.sub
+subbasin       1     3     3                              Subbasin: 3
+          000030000.sub
+subbasin       1     4     4                              Subbasin: 4
+          000040000.sub
+subbasin       1     5     5                              Subbasin: 5
+          000050000.sub
+subbasin       1     6     6                              Subbasin: 6
+          000060000.sub
+subbasin       1     7     7                              Subbasin: 7
+          000070000.sub
+subbasin       1     8     8                              Subbasin: 8
+          000080000.sub
+subbasin       1     9     9                              Subbasin: 9
+          000090000.sub
+subbasin       1    10    10                              Subbasin: 10
+          000100000.sub
+subbasin       1    11    11                              Subbasin: 11
+          000110000.sub
+subbasin       1    12    12                              Subbasin: 12
+          000120000.sub
+subbasin       1    13    13                              Subbasin: 13
+          000130000.sub
+subbasin       1    14    14                              Subbasin: 14
+          000140000.sub
+subbasin       1    15    15                              Subbasin: 15
+          000150000.sub
+subbasin       1    16    16                              Subbasin: 16
+          000160000.sub
+subbasin       1    17    17                              Subbasin: 17
+          000170000.sub
+subbasin       1    18    18                              Subbasin: 18
+          000180000.sub
+subbasin       1    19    19                              Subbasin: 19
+          000190000.sub
+subbasin       1    20    20                              Subbasin: 20
+          000200000.sub
+subbasin       1    21    21                              Subbasin: 21
+          000210000.sub
+subbasin       1    22    22                              Subbasin: 22
+          000220000.sub
+subbasin       1    23    23                              Subbasin: 23
+          000230000.sub
+route          2    24     1     1
+          000010000.rte000010000.swq
+route          2    25     2     2
+          000020000.rte000020000.swq
+route          2    26     3     3
+          000030000.rte000030000.swq
+route          2    27     4     4
+          000040000.rte000040000.swq
+route          2    28     6     6
+          000060000.rte000060000.swq
+route          2    29     7     7
+          000070000.rte000070000.swq
+route          2    30    11    11
+          000110000.rte000110000.swq
+route          2    31    12    12
+          000120000.rte000120000.swq
+route          2    32    15    15
+          000150000.rte000150000.swq
+route          2    33    16    16
+          000160000.rte000160000.swq
+route          2    34    21    21
+          000210000.rte000210000.swq
+route          2    35    23    23
+          000230000.rte000230000.swq
+add            5    36    13    24
+add            5    37    36    25
+route          2    38    13    37
+          000130000.rte000130000.swq
+add            5    39     8    28
+add            5    40    39    29
+route          2    41     8    40
+          000080000.rte000080000.swq
+add            5    42     5    26
+add            5    43    42    27
+route          2    44     5    43
+          000050000.rte000050000.swq
+add            5    45    14    38
+add            5    46    45    32
+route          2    47    14    46
+          000140000.rte000140000.swq
+add            5    48     9    44
+add            5    49    48    31
+route          2    50     9    49
+          000090000.rte000090000.swq
+add            5    51    17    47
+add            5    52    51    33
+route          2    53    17    52
+          000170000.rte000170000.swq
+add            5    54    10    41
+add            5    55    54    50
+route          2    56    10    55
+          000100000.rte000100000.swq
+add            5    57    19    53
+add            5    58    57    35
+route          2    59    19    58
+          000190000.rte000190000.swq
+add            5    60    18    56
+add            5    61    60    30
+route          2    62    18    61
+          000180000.rte000180000.swq
+add            5    63    20    59
+add            5    64    63    34
+route          2    65    20    64
+          000200000.rte000200000.swq
+add            5    66    22    62
+add            5    67    66    65
+route          2    68    22    67
+          000220000.rte000220000.swq
+saveconc      14    68     1     0
+          watout.dat
+finish         0
